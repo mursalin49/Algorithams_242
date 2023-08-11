@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -16,7 +15,7 @@ int partition(int arr[], int l, int r)
 
     for (int j = l; j < r; j++)
     {
-        if (arr[j] < pivot)
+        if (arr[j] > pivot)
         {
             i++;
             swap(arr[i], arr[j]);
